@@ -19,12 +19,12 @@ const bancoDeNomes = [
   { nome: "Amalia", genero: "F" }, { nome: "Amaro", genero: "M" }, { nome: "Amauri", genero: "M" },
   { nome: "Amelia", genero: "F" }, { nome: "Americo", genero: "M" }, { name: "Amilcar", genero: "M" },
   { nome: "Ana", genero: "F" }, { nome: "Anabel", genero: "F" }, { nome: "Anabela", genero: "F" },
-  { nome: "Anais", genero: "F" }, { name: "Anastacia", genero: "F" }, { nome: "Anelise", genero: "F" },
+  { nome: "Anais", genero: "F" }, { nome: "Anastacia", genero: "F" }, { name: "Anelise", genero: "F" },
   { nome: "Angel", genero: "M" }, { nome: "Angela", genero: "F" }, { nome: "Angelica", genero: "F" },
-  { nome: "Angelina", genero: "F" }, { nome: "Angelo", genero: "M" }, { nome: "Anibal", genero: "M" },
-  { nome: "Anise", genero: "F" }, { nome: "Anita", genero: "F" }, { nome: "Anisio", genero: "M" },
+  { nome: "Angelina", genero: "F" }, { nome: "Angelo", genero: "M" }, { name: "Anibal", genero: "M" },
+  { nome: "Anise", genero: "F" }, { nome: "Anita", genero: "F" }, { name: "Anisio", genero: "M" },
   { nome: "Anna", genero: "F" }, { nome: "Antonella", genero: "F" }, { nome: "Antonia", genero: "F" },
-  { nome: "Antonio", genero: "M" }, { nome: "Antony", genero: "M" }, { nome: "Apollo", genero: "M" },
+  { nome: "Antonio", genero: "M" }, { name: "Antony", genero: "M" }, { name: "Apollo", genero: "M" },
   { name: "Apolo", genero: "M" }, { name: "Aparecida", genero: "F" }, { name: "Aparecido", genero: "M" },
   { name: "Aquiles", genero: "M" }, { name: "Arnaldo", genero: "M" }, { name: "Arthur", genero: "M" },
   { name: "Artur", genero: "M" }, { name: "Ariel", genero: "M" }, { name: "Ariela", genero: "F" },
@@ -100,7 +100,6 @@ function sortearNomes() {
   personagens.mecanico = pegarNomeAleatorio();
 }
 
-// Função para flexionar artigos, substantivos e pronomes de acordo com o gênero
 function flexionar(p, tipo) {
   const isM = p.genero === "M";
   
@@ -255,7 +254,6 @@ const imageEl = document.getElementById("story-image");
 const sceneTextEl = document.getElementById("scene-text");
 const choicesEl = document.getElementById("choices");
 const contentEl = document.getElementById("content");
-const globalRestartBtn = document.getElementById("global-restart-btn");
 
 function renderScene(sceneKey) {
   const currentStory = getStory();
@@ -309,6 +307,7 @@ function reiniciarHistoria() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const globalRestartBtn = document.getElementById("global-restart-btn");
   if (globalRestartBtn) {
     globalRestartBtn.addEventListener("click", reiniciarHistoria);
   }

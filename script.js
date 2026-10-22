@@ -17,37 +17,37 @@ const bancoDeNomes = [
   { nome: "Alice", genero: "F" }, { nome: "Alicia", genero: "F" }, { nome: "Aline", genero: "F" },
   { nome: "Alison", genero: "M" }, { nome: "Alvaro", genero: "M" }, { nome: "Amanda", genero: "F" },
   { nome: "Amalia", genero: "F" }, { nome: "Amaro", genero: "M" }, { nome: "Amauri", genero: "M" },
-  { nome: "Amelia", genero: "F" }, { nome: "Americo", genero: "M" }, { name: "Amilcar", genero: "M" },
+  { nome: "Amelia", genero: "F" }, { nome: "Americo", genero: "M" }, { nome: "Amilcar", genero: "M" },
   { nome: "Ana", genero: "F" }, { nome: "Anabel", genero: "F" }, { nome: "Anabela", genero: "F" },
-  { nome: "Anais", genero: "F" }, { nome: "Anastacia", genero: "F" }, { name: "Anelise", genero: "F" },
+  { nome: "Anais", genero: "F" }, { nome: "Anastacia", genero: "F" }, { nome: "Anelise", genero: "F" },
   { nome: "Angel", genero: "M" }, { nome: "Angela", genero: "F" }, { nome: "Angelica", genero: "F" },
   { nome: "Angelina", genero: "F" }, { nome: "Angelo", genero: "M" }, { nome: "Anibal", genero: "M" },
   { nome: "Anise", genero: "F" }, { nome: "Anita", genero: "F" }, { nome: "Anisio", genero: "M" },
   { nome: "Anna", genero: "F" }, { nome: "Antonella", genero: "F" }, { nome: "Antonia", genero: "F" },
   { nome: "Antonio", genero: "M" }, { nome: "Antony", genero: "M" }, { nome: "Apollo", genero: "M" },
-  { nome: "Apolo", genero: "M" }, { name: "Aparecida", genero: "F" }, { name: "Aparecido", genero: "M" },
-  { name: "Aquiles", genero: "M" }, { name: "Arnaldo", genero: "M" }, { name: "Arthur", genero: "M" },
-  { name: "Artur", genero: "M" }, { name: "Ariel", genero: "M" }, { name: "Ariela", genero: "F" },
-  { name: "Ariane", genero: "F" }, { name: "Arlene", genero: "F" }, { name: "Armando", genero: "M" },
-  { name: "Arnalda", genero: "F" }, { name: "Aron", genero: "M" }, { name: "Astrid", genero: "F" },
-  { name: "Athena", genero: "F" }, { name: "Atena", genero: "F" }, { name: "Augusta", genero: "F" },
-  { name: "Augusto", genero: "M" }, { name: "Aurea", genero: "F" }, { name: "Aurelio", genero: "M" },
-  { name: "Aurora", genero: "F" }, { name: "Ayla", genero: "F" }, { name: "Aziz", genero: "M" },
-  { name: "Bárbara", genero: "F" }, { name: "Baltazar", genero: "M" }, { name: "Barnabe", genero: "M" },
-  { name: "Bartolomeu", genero: "M" }, { name: "Beatriz", genero: "F" }, { name: "Belinda", genero: "F" },
-  { name: "Belisa", genero: "F" }, { name: "Bella", genero: "F" }, { name: "Benicio", genero: "M" },
-  { name: "Benito", genero: "M" }, { name: "Benjamin", genero: "M" }, { name: "Bento", genero: "M" },
-  { name: "Berenice", genero: "F" }, { name: "Bernadete", genero: "F" }, { name: "Bernardo", genero: "M" },
-  { name: "Berta", genero: "F" }, { name: "Beto", genero: "M" }, { name: "Betina", genero: "F" },
-  { name: "Bianca", genero: "F" }, { name: "Bibiana", genero: "F" }, { name: "Blanca", genero: "F" },
-  { name: "Boaventura", genero: "M" }, { name: "Boris", genero: "M" }, { name: "Branca", genero: "F" },
-  { name: "Brenda", genero: "F" }, { name: "Brendon", genero: "M" }, { name: "Breno", genero: "M" },
-  { name: "Brian", genero: "M" }, { name: "Briana", genero: "F" }, { name: "Bridget", genero: "F" },
-  { name: "Bruna", genero: "F" }, { name: "Brunilda", genero: "F" }, { name: "Bruno", genero: "M" },
-  { name: "Bryan", genero: "M" }, { name: "Caio", genero: "M" }, { name: "Caleb", genero: "M" },
-  { name: "Camila", genero: "F" }, { name: "Camilo", genero: "M" }, { name: "Carina", genero: "F" },
-  { name: "Carla", genero: "F" }, { name: "Carlos", genero: "M" }, { name: "Catarina", genero: "F" },
-  { name: "Cauã", genero: "M" }, { name: "Cecilia", genero: "F" }, { name: "Celeste", genero: "F" },
+  { nome: "Apolo", genero: "M" }, { nome: "Aparecida", genero: "F" }, { nome: "Aparecido", genero: "M" },
+  { nome: "Aquiles", genero: "M" }, { nome: "Arnaldo", genero: "M" }, { nome: "Arthur", genero: "M" },
+  { nome: "Artur", genero: "M" }, { nome: "Ariel", genero: "M" }, { nome: "Ariela", genero: "F" },
+  { nome: "Ariane", genero: "F" }, { nome: "Arlene", genero: "F" }, { nome: "Armando", genero: "M" },
+  { nome: "Arnalda", genero: "F" }, { nome: "Aron", genero: "M" }, { nome: "Astrid", genero: "F" },
+  { nome: "Athena", genero: "F" }, { nome: "Atena", genero: "F" }, { nome: "Augusta", genero: "F" },
+  { nome: "Augusto", genero: "M" }, { nome: "Aurea", genero: "F" }, { nome: "Aurelio", genero: "M" },
+  { nome: "Aurora", genero: "F" }, { nome: "Ayla", genero: "F" }, { nome: "Aziz", genero: "M" },
+  { nome: "Bárbara", genero: "F" }, { nome: "Baltazar", genero: "M" }, { nome: "Barnabe", genero: "M" },
+  { nome: "Bartolomeu", genero: "M" }, { nome: "Beatriz", genero: "F" }, { nome: "Belinda", genero: "F" },
+  { nome: "Belisa", genero: "F" }, { nome: "Bella", genero: "F" }, { nome: "Benicio", genero: "M" },
+  { nome: "Benito", genero: "M" }, { nome: "Benjamin", genero: "M" }, { nome: "Bento", genero: "M" },
+  { nome: "Berenice", genero: "F" }, { nome: "Bernadete", genero: "F" }, { nome: "Bernardo", genero: "M" },
+  { nome: "Berta", genero: "F" }, { nome: "Beto", genero: "M" }, { nome: "Betina", genero: "F" },
+  { nome: "Bianca", genero: "F" }, { nome: "Bibiana", genero: "F" }, { nome: "Blanca", genero: "F" },
+  { nome: "Boaventura", genero: "M" }, { nome: "Boris", genero: "M" }, { nome: "Branca", genero: "F" },
+  { nome: "Brenda", genero: "F" }, { nome: "Brendon", genero: "M" }, { nome: "Breno", genero: "M" },
+  { nome: "Brian", genero: "M" }, { nome: "Briana", genero: "F" }, { nome: "Bridget", genero: "F" },
+  { nome: "Bruna", genero: "F" }, { nome: "Brunilda", genero: "F" }, { nome: "Bruno", genero: "M" },
+  { nome: "Bryan", genero: "M" }, { nome: "Caio", genero: "M" }, { nome: "Caleb", genero: "M" },
+  { nome: "Camila", genero: "F" }, { nome: "Camilo", genero: "M" }, { name: "Carina", genero: "F" },
+  { name: "Carla", genero: "F" }, { nome: "Carlos", genero: "M" }, { name: "Catarina", genero: "F" },
+  { nome: "Cauã", genero: "M" }, { name: "Cecilia", genero: "F" }, { name: "Celeste", genero: "F" },
   { name: "Celia", genero: "F" }, { name: "Celso", genero: "M" }, { name: "Cesar", genero: "M" },
   { name: "Clara", genero: "F" }, { name: "Clarice", genero: "F" }, { name: "Claudio", genero: "M" },
   { name: "Cleber", genero: "M" }, { name: "Daniel", genero: "M" }, { name: "Daniela", genero: "F" },
@@ -156,4 +156,160 @@ function getStory() {
     mecanico: {
       narrative: `${flexionar(mecanico, "O")} ${flexionar(mecanico, "mecanico")} ${mecanico.nome} limpa as mãos sujas de graxa e aponta para uma foto antiga pregada na parede da oficina.`,
       image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80",
-      sceneText: `\"Seu ${flexionar(avo, "avo")} ${avo.nome} salvou esta oficina em 1987. Depois do incêndio na antiga fábrica, ${flexionar(avo, "ele")} chegou com documentos e um acordo estranho.
+      sceneText: `\"Seu ${flexionar(avo, "avo")} ${avo.nome} salvou esta oficina em 1987. Depois do incêndio na antiga fábrica, ${flexionar(avo, "ele")} chegou com documentos e um acordo estranho. Nunca quis falar sobre o que realmente aconteceu naquela noite.\"`,
+      choices: [
+        { text: "Perguntar sobre a fábrica", next: "fabrica" },
+        { text: "Ir até a padaria agora", next: "padaria2" }
+      ]
+    },
+
+    endereco: {
+      narrative: "O endereço na carta leva a um terreno vazio onde antes ficava a Fábrica Aurora. As pessoas mais velhas ainda baixam a voz ao falar do lugar.",
+      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+      sceneText: `Uma placa enferrujada ainda resiste: \"Projeto Aurora - Pesquisa & Desenvolvimento\". No diário d${flexionar(avo, "do")} seu ${flexionar(avo, "avo")} ${avo.nome}, a mesma palavra aparece sublinhada dezenas de vezes.`,
+      choices: [
+        { text: "Abrir o diário na página marcada", next: "diario" },
+        { text: "Procurar testemunhas da época", next: "testemunhas" }
+      ]
+    },
+
+    oficina: {
+      narrative: `Você chega à oficina. ${flexionar(mecanico, "O")} ${flexionar(mecanico, "mecanico")} ${mecanico.nome} reconhece a carta imediatamente.`,
+      image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80",
+      sceneText: `\"Então ${flexionar(padaria, "ele")} finalmente te entregou... Seu ${flexionar(avo, "avo")} ${avo.nome} prometeu que o segredo só seria revelado quando as peças se encaissassem. A fábrica, a carta e o incêndio não foram acidente.\"`,
+      choices: [
+        { text: "Abrir o diário na página marcada", next: "diario" },
+        { text: "Perguntar o que sabe do incêndio", next: "incendio" }
+      ]
+    },
+
+    fabrica: {
+      narrative: "A Fábrica Aurora era oficialmente uma indústria têxtil. Mas quem trabalhou lá conta outra história.",
+      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+      sceneText: `\"Eles desenvolviam máquinas que 'aprendiam sozinhas'. Seu ${flexionar(avo, "avo")} ${avo.nome} era ${flexionar(avo, "o")} ${flexionar(avo, "engenheiro")}. Na noite do incêndio, ${flexionar(avo, "ele")} foi ${flexionar(avo, "o")} ${flexionar(avo, "unico")} que saiu carregando caixas de documentos... e nunca mais falou sobre o projeto.\"`,
+      choices: [
+        { text: "Abrir o diário na página marcada", next: "diario" },
+        { text: "Procurar mais testemunhas", next: "testemunhas" }
+      ]
+    },
+
+    padaria2: {
+      narrative: `${padaria.nome} te recebe com um olhar de alívio. Parece que esperava por este momento há décadas.`,
+      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80",
+      sceneText: `\"${mecanico.nome} te mandou, não foi? Então as coisas estão se alinhando. Seu ${flexionar(avo, "avo")} ${avo.nome} disse que quando a família ajudasse tanto a padaria quanto a oficina, o ciclo se fecharia.\"`,
+      choices: [
+        { text: "Abrir o diário na página marcada", next: "diario" },
+        { text: "Perguntar sobre o ciclo", next: "ciclo" }
+      ]
+    },
+
+    testemunhas: {
+      narrative: "Você encontra três pessoas que trabalharam na Fábrica Aurora. Todas contam a mesma versão, com detalhes diferentes.",
+      image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+      sceneText: `O projeto não era sobre tecidos. Era sobre uma máquina capaz de prever padrões humanos. Seu ${flexionar(avo, "avo")} ${avo.nome} descobriu algo perigoso demais... e preferiu apagar os rastros no fogo.`,
+      choices: [
+        { text: "Ler a última entrada do diário", next: "diario" }
+      ]
+    },
+
+    incendio: {
+      narrative: `${mecanico.nome} baixa a voz, mesmo estando a sós na oficina.`,
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&q=80",
+      sceneText: `\"O fogo começou no laboratório. Seu ${flexionar(avo, "avo")} ${avo.nome} gritou para todos saírem. Depois voltou ${flexionar(avo, "sozinho")} e trancou a porta. Quando os bombeiros chegaram, só restavam cinzas e ${flexionar(avo, "ele")}... com o diário debaixo do braço.\"`,
+      choices: [
+        { text: "Ler a última entrada do diário", next: "diario" }
+      ]
+    },
+
+    ciclo: {
+      narrative: `${padaria.nome} segura suas mãos com carinho.`,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      sceneText: `\"Seu ${flexionar(avo, "avo")} ${avo.nome} acreditava que o conhecimento só deveria voltar quando alguém da família demonstrasse empatia suficiente. Ajudar pessoas diferentes, sem interesse... era o teste. Você passou.\"`,
+      choices: [
+        { text: "Ler a última entrada do diário", next: "diario" }
+      ]
+    },
+
+    diario: {
+      narrative: `Você abre o diário na página marcada com uma fita vermelha. A letra d${flexionar(avo, "do")} seu ${flexionar(avo, "avo")} ${avo.nome} está trêmula, mas determinada.`,
+      image: "https://images.unsplash.com/photo-1456513080880-7d93aaa2ba29?w=800&q=80",
+      sceneText: "\"Se você está lendo isto, significa que ajudou pessoas cujas vidas eu toquei em 1987. A Fábrica Aurora não fabricava tecidos. Criávamos o protótipo de uma inteligência que aprendia com o comportamento humano. Eu vi o perigo. Por isso queimei o laboratório. Mas guardei o essencial: a ideia de que a tecnologia só deve existir se servir às pessoas... nunca o contrário. Agora o segredo é seu.\"",
+      choices: [
+        { text: `Aceitar o legado d${flexionar(avo, "do")} ${flexionar(avo, "avo")} ${avo.nome}`, next: "final" }
+      ]
+    },
+
+    final: {
+      narrative: "O diário se fecha. Pela primeira vez, todas as peças se encaixam.",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+      sceneText: `As pessoas que você ajudou não eram coincências. Seu ${flexionar(avo, "avo")} ${avo.nome} preparou o caminho décadas atrás. O verdadeiro segredo não era a máquina... era a prova de que você escolheria o lado humano. O legado agora é seu.`,
+      choices: []
+    }
+  };
+}
+
+const titleEl = document.getElementById("title");
+const narrativeEl = document.getElementById("narrative");
+const imageEl = document.getElementById("story-image");
+const sceneTextEl = document.getElementById("scene-text");
+const choicesEl = document.getElementById("choices");
+const contentEl = document.getElementById("content");
+
+function renderScene(sceneKey) {
+  const currentStory = getStory();
+  const scene = currentStory[sceneKey];
+
+  if (!scene) {
+    console.error("Cena não encontrada:", sceneKey);
+    return;
+  }
+
+  contentEl.classList.remove("fade-in");
+  void contentEl.offsetWidth;
+  contentEl.classList.add("fade-in");
+
+  if (scene.title) {
+    titleEl.textContent = scene.title;
+  }
+
+  narrativeEl.textContent = scene.narrative;
+  imageEl.src = scene.image;
+  imageEl.alt = "Cena da história";
+  sceneTextEl.textContent = scene.sceneText;
+
+  choicesEl.innerHTML = "";
+
+  if (scene.choices && scene.choices.length > 0) {
+    scene.choices.forEach(function (choice) {
+      const btn = document.createElement("button");
+      btn.className = "choice-btn";
+      btn.type = "button";
+      btn.textContent = choice.text;
+
+      btn.addEventListener("click", function () {
+        renderScene(choice.next);
+      });
+
+      choicesEl.appendChild(btn);
+    });
+  } else {
+    const avoRotulo = flexionar(personagens.avo, "avo");
+    const finalBox = document.createElement("div");
+    finalBox.className = "final-reveal";
+    finalBox.innerHTML = `<strong>Fim da aventura.</strong><br>O segredo d${flexionar(personagens.avo, "do")} ${avoRotulo} ${personagens.avo.nome} foi revelado.`;
+    choicesEl.appendChild(finalBox);
+  }
+}
+
+function reiniciarHistoria() {
+  sortearNomes();
+  renderScene("start");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const globalRestartBtn = document.getElementById("global-restart-btn");
+  if (globalRestartBtn) {
+    globalRestartBtn.addEventListener("click", reiniciarHistoria);
+  }
+  reiniciarHistoria();
+});

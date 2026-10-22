@@ -131,6 +131,29 @@ h1 {
   font-size: 14px;
   color: var(--text-muted);
   font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Botão de recomeçar fixo no topo */
+.global-restart-btn {
+  background: rgba(255, 214, 10, 0.1);
+  border: 1px solid var(--gold);
+  color: var(--gold-bright);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 6px;
+}
+
+.global-restart-btn:hover {
+  background: var(--gold);
+  color: #1a0a00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 214, 10, 0.3);
 }
 
 /* Content */
@@ -260,33 +283,6 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 18px;
-}
-
-.restart-btn {
-  margin-top: 24px;
-  background: transparent;
-  border: 2px solid var(--gold);
-  color: var(--gold);
-  padding: 13px 30px;
-  border-radius: 50px;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s;
-  display: none;
-}
-
-.restart-btn.visible {
-  display: inline-block;
-}
-
-.restart-btn:hover {
-  background: linear-gradient(135deg, var(--gold), var(--orange));
-  color: #1a0a00;
-  border-color: transparent;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 214, 10, 0.4);
 }
 
 /* Animation */

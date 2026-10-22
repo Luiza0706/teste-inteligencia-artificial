@@ -4,7 +4,7 @@ const bancoDeNomes = [
   "Akira", "Alan", "Alana", "Alba", "Albert", "Alberta", "Alberto", "Albino", "Alcides", "Aldo",
   "Alef", "Alejandro", "Aleksander", "Alessandra", "Alessandro", "Alex", "Alexander", "Alexandra", "Alexandre", "Alexia",
   "Alexis", "Alfredo", "Alice", "Alicia", "Aline", "Alison", "Alvaro", "Amanda", "Amalia", "Amaro",
-  "Amauri", "Amelia", "Americo", "Amelia", "Amilcar", "Ana", "Anabel", "Anabela", "Anais", "Anastacia",
+  "Amauri", "Amelia", "Americo", "Amilcar", "Ana", "Anabel", "Anabela", "Anais", "Anastacia",
   "Anelise", "Angel", "Angela", "Angelica", "Angelina", "Angelo", "Anibal", "Anise", "Anita", "Anisio",
   "Anna", "Antonella", "Antonia", "Antonio", "Antony", "Apollo", "Apolo", "Aparecida", "Aparecido", "Aquiles",
   "Arnaldo", "Arthur", "Artur", "Ariel", "Ariela", "Ariane", "Arlene", "Armando", "Arnalda", "Aron",
@@ -16,11 +16,11 @@ const bancoDeNomes = [
   "Calista", "Calixto", "Camila", "Camilo", "Candida", "Candido", "Carina", "Carla", "Carlo", "Carlos",
   "Carlota", "Carmem", "Carola", "Carolina", "Caroline", "Cassia", "Cassiano", "Cassio", "Catarina", "Celia",
   "Celina", "Celso", "Cesar", "Charles", "Charlotte", "Christian", "Christiane", "Christopher", "Cicero", "Cidia",
-  "Cilene", "Cora", "Coraçao", "Coraline", "Cordelia", "Celia", "Cintia", "Cirilo", "Ciro", "Clara",
+  "Cilene", "Cora", "Coraçao", "Coraline", "Cordelia", "Cintia", "Cirilo", "Ciro", "Clara",
   "Clarice", "Clarissa", "Claudio", "Cleber", "Clementina", "Cleo", "Cleopatra", "Clovis", "Conrado", "Constança",
-  "Constancio", "Cora", "Cristiana", "Cristiano", "Cristina", "Cristovao", "Dafne", "Dagmar", "Daisy", "Dalila", "Dalva", "Damiao", "Daniel", "Daniela", "Daniele", "Danilo", "Dante", "Dara", "Darcio", "Daria",
+  "Constancio", "Cristiana", "Cristiano", "Cristina", "Cristovao", "Dafne", "Dagmar", "Daisy", "Dalila", "Dalva", "Damiao", "Daniel", "Daniela", "Daniele", "Danilo", "Dante", "Dara", "Darcio", "Daria",
   "Dario", "Davi", "David", "Davina", "Dayana", "Debora", "Decio", "Deise", "Delia", "Delmar",
-  "Demétrio", "Denis", "Denise", "Denise", "Desiree", "Diana", "Diego", "Dilma", "Dina", "Diogo",
+  "Demétrio", "Denis", "Denise", "Desiree", "Diana", "Diego", "Dilma", "Dina", "Diogo",
   "Dionisio", "Dirce", "Dirceu", "Dora", "Doralice", "Dorian", "Doroteia", "Douglas", "Dulce", "Eder",
   "Edgard", "Edgar", "Edite", "Edna", "Edson", "Eduarda", "Eduardo", "Edvaldo", "Efraim", "Eileen",
   "Elaine", "Elba", "Eleanor", "Elena", "Eleonora", "Eleni", "Eliana", "Eliane", "Elias", "Elisa",
@@ -36,9 +36,9 @@ const bancoDeNomes = [
   "Gilberto", "Gilmar", "Gilson", "Gina", "Giordano", "Giovana", "Giovanni", "Gisela", "Gisele", "Giuliana",
   "Giulia", "Glaucia", "Glaucio", "Glória", "Godefroi", "Gonzalo", "Grace", "Gracia", "Graciela", "Graziela",
   "Gregorio", "Greta", "Guido", "Guilherme", "Guilhermina", "Guiomar", "Gustavo", "Hadassa", "Hamilton", "Hanna",
-  "Hannah", "Hans", "Harold", "Haroldo", "Harrison", "Harry", "Hector", "Heitor", "Helena", "Helena",
+  "Hannah", "Hans", "Harold", "Haroldo", "Harrison", "Harry", "Hector", "Heitor", "Helena",
   "Heleno", "Helga", "Helio", "Heloisa", "Henry", "Heraldo", "Herbert", "Hercules", "Hermano", "Hermes",
-  "Hilda", "Hlio", "Homer", "Homero", "Horacio", "Hortencia", "Hugo", "Humberto", "Iana", "Igor",
+  "Hilda", "Homer", "Homero", "Horacio", "Hortencia", "Hugo", "Humberto", "Iana", "Igor",
   "Ilan", "Ilana", "Inacio", "Ines", "Ingrid", "Iara", "Irene", "Iris", "Irina", "Irma",
   "Isa", "Isaac", "Isabel", "Isabela", "Isabella", "Isadora", "Isaias", "Isolda", "Israel", "Italo",
   "Iure", "Iuri", "Ivã", "Ivan", "Ivana", "Ivete", "Ivo", "Ivone", "Izabel", "Jaci",
@@ -52,13 +52,13 @@ const bancoDeNomes = [
   "Kareem", "Karen", "Karina", "Karine", "Karla", "Kate", "Katia", "Katiuscia", "Kauan", "Kelvin",
   "Kenia", "Keno", "Kevin", "Kiara", "Kiko", "Klara", "Klaus", "Klayton", "Kora", "Kylian",
   "Lara", "Larissa", "Lauana", "Laura", "Lauro", "Laercio", "Lais", "Laila", "Laisa", "Lana",
-  "Lara", "Lari", "Larissa", "Laura", "Laurindo", "Lauro", "Lavinia", "Layla", "Lazaro", "Leandra",
-  "Leandro", "Leda", "Leila", "Lelia", "Leni", "Lenita", "Leo", "Leonardo", "Leonel", "Leonor",
-  "Leopoldo", "Leticia", "Levy", "Levi", "Lia", "Liana", "Lidia", "Lidia", "Lidiane", "Ligia",
-  "Lilian", "Liliana", "Liliane", "Lina", "Lincoln", "Linda", "Linn", "Lino", "Lionel", "Lisa",
-  "Lisandra", "Livio", "Livia", "Liz", "Liza", "Lorena", "Lorenzo", "Loris", "Lourdes", "Luan",
-  "Luana", "Luara", "Luca", "Lucas", "Lucia", "Luciana", "Luciano", "Lucien", "Luciene", "Lucio",
-  "Lucrecia", "Ludmila", "Luis", "Luisa", "Luiz", "Luiza", "Luma", "Luna", "Luzia", "Lycio"
+  "Lari", "Laurindo", "Lavinia", "Layla", "Lazaro", "Leandra", "Leandro", "Leda", "Leila", "Lelia",
+  "Leni", "Lenita", "Leo", "Leonardo", "Leonel", "Leonor", "Leopoldo", "Leticia", "Levy", "Levi",
+  "Lia", "Liana", "Lidia", "Lidiane", "Ligia", "Lilian", "Liliana", "Liliane", "Lina", "Lincoln",
+  "Linda", "Linn", "Lino", "Lionel", "Lisa", "Lisandra", "Livio", "Livia", "Liz", "Liza",
+  "Lorena", "Lorenzo", "Loris", "Lourdes", "Luan", "Luana", "Luara", "Luca", "Lucas", "Lucia",
+  "Luciana", "Luciano", "Lucien", "Luciene", "Lucio", "Lucrecia", "Ludmila", "Luis", "Luisa", "Luiz",
+  "Luiza", "Luma", "Luna", "Luzia", "Lycio"
 ];
 
 // Objeto global de nomes dos personagens da rodada atual
@@ -71,8 +71,7 @@ let personagens = {
 // Função para sortear nomes aleatórios sem repetição
 function sortearNomes() {
   const nomesCopia = [...bancoDeNomes];
-  
-  // Função auxiliar para remover um nome sorteado da cópia
+
   function pegarNomeAleatorio() {
     const index = Math.floor(Math.random() * nomesCopia.length);
     return nomesCopia.splice(index, 1)[0];
@@ -134,7 +133,7 @@ function getStory() {
     oficina: {
       narrative: `Você chega à oficina. ${mecanico} reconhece a carta imediatamente.`,
       image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80",
-      sceneText: `\"Então ela finalmente te entregou... Seu avô ${avo} prometeu que o segredo só seria revelado quando as peças se encaixassem. A fábrica, a carta e o incêndio não foram acidente.\"`,
+      sceneText: `\"Então ela finalmente te entregou... Seu avô ${avo} prometeu que o segredo só seria revelado quando as peças se encaissassem. A fábrica, a carta e o incêndio não foram acidente.\"`,
       choices: [
         { text: "Abrir o diário na página marcada", next: "diario" },
         { text: "Perguntar o que ele sabe do incêndio", next: "incendio" }
@@ -216,7 +215,7 @@ const contentEl = document.getElementById("content");
 function renderScene(sceneKey) {
   const currentStory = getStory();
   const scene = currentStory[sceneKey];
-  
+
   if (!scene) {
     console.error("Cena não encontrada:", sceneKey);
     return;
@@ -270,7 +269,7 @@ function renderScene(sceneKey) {
   }
 }
 
-// Função para recomeçar do zero sortando novos nomes
+// Função para recomeçar do zero sorteando novos nomes
 function reiniciarHistoria() {
   sortearNomes();
   renderScene("start");

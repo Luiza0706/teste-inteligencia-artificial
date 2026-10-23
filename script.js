@@ -1,4 +1,4 @@
-// Banco de nomes com identificação de género ("M" para masculino, "F" para feminino)
+// Banco de nomes com identificação de gênero ("M" para masculino, "F" para feminino)
 const bancoDeNomes = [
   { nome: "Aarao", genero: "M" }, { nome: "Abel", genero: "M" }, { nome: "Abigail", genero: "F" },
   { nome: "Acacio", genero: "M" }, { nome: "Ada", genero: "F" }, { nome: "Adalberto", genero: "M" },
@@ -87,7 +87,6 @@ let personagens = {
   mecanico: { nome: "", genero: "M" }
 };
 
-// Sorteio totalmente aleatório sem repetição entre os personagens da mesma rodada
 function sortearNomes() {
   const disponiveis = [...bancoDeNomes];
 
@@ -101,29 +100,29 @@ function sortearNomes() {
   personagens.mecanico = pegarAleatorio();
 }
 
-// Retorna unicamente a palavra flexionada (sem preposições adicionais como 'do'/'da')
-function flexionar(personagem, palavra) {
+function flexionar(personagem, tipo) {
   const isM = personagem.genero === "M";
   
   const mapa = {
     "avo": isM ? "avô" : "avó",
     "AVO": isM ? "AVÔ" : "AVÓ",
+    "do_avo": isM ? "do seu avô" : "da sua avó",
+    "DO_AVO": isM ? "DO SEU AVÔ" : "DA SUA AVÓ",
     "mecanico": isM ? "mecânico" : "mecânica",
     "padeiro": isM ? "padeiro" : "padeira",
     "senhor": isM ? "senhor" : "senhora",
     "engenheiro": isM ? "engenheiro-chefe" : "engenheira-chefe",
     "o": isM ? "o" : "a",
     "O": isM ? "O" : "A",
+    "do": isM ? "do" : "da",
     "ao": isM ? "ao" : "à",
     "ele": isM ? "ele" : "ela",
     "dele": isM ? "dele" : "dela",
     "sozinho": isM ? "sozinho" : "sozinha",
-    "unico": isM ? "único" : "única",
-    "do_artigo": isM ? "do" : "da",
-    "DO_ARTIGO": isM ? "DO" : "DA"
+    "unico": isM ? "único" : "única"
   };
 
-  return mapa[palavra] || palavra;
+  return mapa[tipo] || tipo;
 }
 
 function getStory() {
@@ -133,8 +132,8 @@ function getStory() {
 
   return {
     start: {
-      title: `O SEGREDO ${flexionar(avo, "DO_ARTIGO")} ${flexionar(avo, "AVO")} ${avo.nome.toUpperCase()}`,
-      narrative: `Você herdou o diário ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome}. Enquanto ajuda diferentes pessoas na cidade, começa a perceber que as vidas delas estão interligadas por um evento misterioso do passado... e ${flexionar(avo, "o")} seu ${flexionar(avo, "avo")} estava no centro de tudo.`,
+      title: `O SEGREDO ${flexionar(avo, "DO_AVO")} ${avo.nome.toUpperCase()}`,
+      narrative: `Você herdou o diário ${flexionar(avo, "do_avo")} ${avo.nome}. Enquanto ajuda diferentes pessoas na cidade, começa a perceber que as vidas delas estão interligadas por um evento misterioso do passado... e ${flexionar(avo, "o")} seu ${flexionar(avo, "avo")} estava no centro de tudo.`,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
       sceneText: "Hoje pela manhã, duas pessoas pediram sua ajuda. Cada uma carrega um pedaço do passado.",
       choices: [
@@ -166,7 +165,7 @@ function getStory() {
     endereco: {
       narrative: "O endereço na carta leva a um terreno vazio onde antes ficava a Fábrica Aurora. As pessoas mais velhas ainda baixam a voz ao falar do lugar.",
       image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
-      sceneText: `Uma placa enferrujada ainda resiste: \"Projeto Aurora - Pesquisa & Desenvolvimento\". No diário ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome}, a mesma palavra aparece sublinhada dezenas de vezes.`,
+      sceneText: `Uma placa enferrujada ainda resiste: \"Projeto Aurora - Pesquisa & Desenvolvimento\". No diário ${flexionar(avo, "do_avo")} ${avo.nome}, a mesma palavra aparece sublinhada dezenas de vezes.`,
       choices: [
         { text: "Abrir o diário na página marcada", next: "diario" },
         { text: "Procurar testemunhas da época", next: "testemunhas" }
@@ -231,11 +230,11 @@ function getStory() {
     },
 
     diario: {
-      narrative: `Você abre o diário na página marcada com uma fita vermelha. A letra ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome} está trêmula, mas determinada.`,
+      narrative: `Você abre o diário na página marcada com uma fita vermelha. A letra ${flexionar(avo, "do_avo")} ${avo.nome} está trêmula, mas determinada.`,
       image: "https://images.unsplash.com/photo-1456513080880-7d93aaa2ba29?w=800&q=80",
       sceneText: "\"Se você está lendo isto, significa que ajudou pessoas cujas vidas eu toquei em 1987. A Fábrica Aurora não fabricava tecidos. Criávamos o protótipo de uma inteligência que aprendia com o comportamento humano. Eu vi o perigo. Por isso queimei o laboratório. Mas guardei o essencial: a ideia de que a tecnologia só deve existir se servir às pessoas... nunca o contrário. Agora o segredo é seu.\"",
       choices: [
-        { text: `Aceitar o legado ${flexionar(avo, "do_artigo")} ${flexionar(avo, "avo")} ${avo.nome}`, next: "final" }
+        { text: `Aceitar o legado ${flexionar(avo, "do_avo")} ${avo.nome}`, next: "final" }
       ]
     },
 
@@ -293,10 +292,9 @@ function renderScene(sceneKey) {
       choicesEl.appendChild(btn);
     });
   } else {
-    const avoRotulo = flexionar(personagens.avo, "avo");
     const finalBox = document.createElement("div");
     finalBox.className = "final-reveal";
-    finalBox.innerHTML = `<strong>Fim da aventura.</strong><br>O segredo ${flexionar(personagens.avo, "do_artigo")} ${avoRotulo} ${personagens.avo.nome} foi revelado.`;
+    finalBox.innerHTML = `<strong>Fim da aventura.</strong><br>O segredo ${flexionar(personagens.avo, "do_avo")} ${personagens.avo.nome} foi revelado.`;
     choicesEl.appendChild(finalBox);
   }
 }

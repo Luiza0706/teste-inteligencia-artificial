@@ -1,4 +1,4 @@
-// Banco de nomes com identificação de gênero ("M" para masculino, "F" para feminino)
+// Banco de nomes com identificação de género ("M" para masculino, "F" para feminino)
 const bancoDeNomes = [
   { nome: "Aarao", genero: "M" }, { nome: "Abel", genero: "M" }, { nome: "Abigail", genero: "F" },
   { nome: "Acacio", genero: "M" }, { nome: "Ada", genero: "F" }, { nome: "Adalberto", genero: "M" },
@@ -25,29 +25,29 @@ const bancoDeNomes = [
   { nome: "Anise", genero: "F" }, { nome: "Anita", genero: "F" }, { nome: "Anisio", genero: "M" },
   { nome: "Anna", genero: "F" }, { nome: "Antonella", genero: "F" }, { nome: "Antonia", genero: "F" },
   { nome: "Antonio", genero: "M" }, { nome: "Antony", genero: "M" }, { nome: "Apollo", genero: "M" },
-  { nome: "Apolo", genero: "M" }, { nome: "Aparecida", genero: "F" }, { nome: "Aparecido", genero: "M" },
-  { nome: "Aquiles", genero: "M" }, { nome: "Arnaldo", genero: "M" }, { nome: "Arthur", genero: "M" },
-  { nome: "Artur", genero: "M" }, { nome: "Ariel", genero: "M" }, { nome: "Ariela", genero: "F" },
-  { nome: "Ariane", genero: "F" }, { nome: "Arlene", genero: "F" }, { nome: "Armando", genero: "M" },
-  { nome: "Arnalda", genero: "F" }, { nome: "Aron", genero: "M" }, { nome: "Astrid", genero: "F" },
-  { nome: "Athena", genero: "F" }, { nome: "Atena", genero: "F" }, { nome: "Augusta", genero: "F" },
-  { nome: "Augusto", genero: "M" }, { nome: "Aurea", genero: "F" }, { nome: "Aurelio", genero: "M" },
-  { nome: "Aurora", genero: "F" }, { nome: "Ayla", genero: "F" }, { nome: "Aziz", genero: "M" },
-  { nome: "Bárbara", genero: "F" }, { nome: "Baltazar", genero: "M" }, { nome: "Barnabe", genero: "M" },
-  { nome: "Bartolomeu", genero: "M" }, { nome: "Beatriz", genero: "F" }, { nome: "Belinda", genero: "F" },
-  { nome: "Belisa", genero: "F" }, { nome: "Bella", genero: "F" }, { nome: "Benicio", genero: "M" },
-  { nome: "Benito", genero: "M" }, { nome: "Benjamin", genero: "M" }, { nome: "Bento", genero: "M" },
-  { nome: "Berenice", genero: "F" }, { nome: "Bernadete", genero: "F" }, { nome: "Bernardo", genero: "M" },
-  { nome: "Berta", genero: "F" }, { nome: "Beto", genero: "M" }, { nome: "Betina", genero: "F" },
-  { nome: "Bianca", genero: "F" }, { nome: "Bibiana", genero: "F" }, { nome: "Blanca", genero: "F" },
-  { nome: "Boaventura", genero: "M" }, { nome: "Boris", genero: "M" }, { nome: "Branca", genero: "F" },
-  { nome: "Brenda", genero: "F" }, { nome: "Brendon", genero: "M" }, { nome: "Breno", genero: "M" },
-  { nome: "Brian", genero: "M" }, { nome: "Briana", genero: "F" }, { nome: "Bridget", genero: "F" },
-  { nome: "Bruna", genero: "F" }, { nome: "Brunilda", genero: "F" }, { nome: "Bruno", genero: "M" },
-  { nome: "Bryan", genero: "M" }, { nome: "Caio", genero: "M" }, { nome: "Caleb", genero: "M" },
-  { nome: "Camila", genero: "F" }, { nome: "Camilo", genero: "M" }, { name: "Carina", genero: "F" },
-  { name: "Carla", genero: "F" }, { nome: "Carlos", genero: "M" }, { name: "Catarina", genero: "F" },
-  { nome: "Cauã", genero: "M" }, { name: "Cecilia", genero: "F" }, { name: "Celeste", genero: "F" },
+  { name: "Apolo", genero: "M" }, { name: "Aparecida", genero: "F" }, { name: "Aparecido", genero: "M" },
+  { name: "Aquiles", genero: "M" }, { name: "Arnaldo", genero: "M" }, { name: "Arthur", genero: "M" },
+  { name: "Artur", genero: "M" }, { name: "Ariel", genero: "M" }, { name: "Ariela", genero: "F" },
+  { name: "Ariane", genero: "F" }, { name: "Arlene", genero: "F" }, { name: "Armando", genero: "M" },
+  { name: "Arnalda", genero: "F" }, { name: "Aron", genero: "M" }, { name: "Astrid", genero: "F" },
+  { name: "Athena", genero: "F" }, { name: "Atena", genero: "F" }, { name: "Augusta", genero: "F" },
+  { name: "Augusto", genero: "M" }, { name: "Aurea", genero: "F" }, { name: "Aurelio", genero: "M" },
+  { name: "Aurora", genero: "F" }, { name: "Ayla", genero: "F" }, { name: "Aziz", genero: "M" },
+  { name: "Bárbara", genero: "F" }, { name: "Baltazar", genero: "M" }, { name: "Barnabe", genero: "M" },
+  { name: "Bartolomeu", genero: "M" }, { name: "Beatriz", genero: "F" }, { name: "Belinda", genero: "F" },
+  { name: "Belisa", genero: "F" }, { name: "Bella", genero: "F" }, { name: "Benicio", genero: "M" },
+  { name: "Benito", genero: "M" }, { name: "Benjamin", genero: "M" }, { name: "Bento", genero: "M" },
+  { name: "Berenice", genero: "F" }, { name: "Bernadete", genero: "F" }, { name: "Bernardo", genero: "M" },
+  { name: "Berta", genero: "F" }, { name: "Beto", genero: "M" }, { name: "Betina", genero: "F" },
+  { name: "Bianca", genero: "F" }, { name: "Bibiana", genero: "F" }, { name: "Blanca", genero: "F" },
+  { name: "Boaventura", genero: "M" }, { name: "Boris", genero: "M" }, { name: "Branca", genero: "F" },
+  { name: "Brenda", genero: "F" }, { name: "Brendon", genero: "M" }, { name: "Breno", genero: "M" },
+  { name: "Brian", genero: "M" }, { name: "Briana", genero: "F" }, { name: "Bridget", genero: "F" },
+  { name: "Bruna", genero: "F" }, { name: "Brunilda", genero: "F" }, { name: "Bruno", genero: "M" },
+  { name: "Bryan", genero: "M" }, { name: "Caio", genero: "M" }, { name: "Caleb", genero: "M" },
+  { name: "Camila", genero: "F" }, { name: "Camilo", genero: "M" }, { name: "Carina", genero: "F" },
+  { name: "Carla", genero: "F" }, { name: "Carlos", genero: "M" }, { name: "Catarina", genero: "F" },
+  { name: "Cauã", genero: "M" }, { name: "Cecilia", genero: "F" }, { name: "Celeste", genero: "F" },
   { name: "Celia", genero: "F" }, { name: "Celso", genero: "M" }, { name: "Cesar", genero: "M" },
   { name: "Clara", genero: "F" }, { name: "Clarice", genero: "F" }, { name: "Claudio", genero: "M" },
   { name: "Cleber", genero: "M" }, { name: "Daniel", genero: "M" }, { name: "Daniela", genero: "F" },
@@ -87,43 +87,43 @@ let personagens = {
   mecanico: { nome: "", genero: "M" }
 };
 
+// Sorteio totalmente aleatório sem repetição entre os personagens da mesma rodada
 function sortearNomes() {
-  const nomesCopia = [...bancoDeNomes];
+  const disponiveis = [...bancoDeNomes];
 
-  function pegarNomeAleatorio() {
-    const index = Math.floor(Math.random() * nomesCopia.length);
-    return nomesCopia.splice(index, 1)[0];
+  function pegarAleatorio() {
+    const indice = Math.floor(Math.random() * disponiveis.length);
+    return disponiveis.splice(indice, 1)[0];
   }
 
-  personagens.avo = pegarNomeAleatorio();
-  personagens.padaria = pegarNomeAleatorio();
-  personagens.mecanico = pegarNomeAleatorio();
+  personagens.avo = pegarAleatorio();
+  personagens.padaria = pegarAleatorio();
+  personagens.mecanico = pegarAleatorio();
 }
 
-function flexionar(p, tipo) {
-  const isM = p.genero === "M";
+// Retorna unicamente a palavra flexionada (sem preposições adicionais como 'do'/'da')
+function flexionar(personagem, palavra) {
+  const isM = personagem.genero === "M";
   
-  const dicionario = {
+  const mapa = {
     "avo": isM ? "avô" : "avó",
     "AVO": isM ? "AVÔ" : "AVÓ",
     "mecanico": isM ? "mecânico" : "mecânica",
     "padeiro": isM ? "padeiro" : "padeira",
-    "dono_padaria": isM ? "dono da padaria" : "dona da padaria",
     "senhor": isM ? "senhor" : "senhora",
     "engenheiro": isM ? "engenheiro-chefe" : "engenheira-chefe",
     "o": isM ? "o" : "a",
     "O": isM ? "O" : "A",
-    "do": isM ? "do" : "da",
-    "DO": isM ? "DO" : "DA",
     "ao": isM ? "ao" : "à",
-    "um": isM ? "um" : "uma",
     "ele": isM ? "ele" : "ela",
     "dele": isM ? "dele" : "dela",
     "sozinho": isM ? "sozinho" : "sozinha",
-    "unico": isM ? "único" : "única"
+    "unico": isM ? "único" : "única",
+    "do_artigo": isM ? "do" : "da",
+    "DO_ARTIGO": isM ? "DO" : "DA"
   };
 
-  return dicionario[tipo] || tipo;
+  return mapa[palavra] || palavra;
 }
 
 function getStory() {
@@ -133,8 +133,8 @@ function getStory() {
 
   return {
     start: {
-      title: `O SEGREDO D${flexionar(avo, "DO")} ${flexionar(avo, "AVO")} ${avo.nome.toUpperCase()}`,
-      narrative: `Você herdou o diário d${flexionar(avo, "do")} seu ${flexionar(avo, "avo")} ${avo.nome}. Enquanto ajuda diferentes pessoas na cidade, começa a perceber que as vidas delas estão interligadas por um evento misterioso do passado... e ${flexionar(avo, "o")} seu ${flexionar(avo, "avo")} estava no centro de tudo.`,
+      title: `O SEGREDO ${flexionar(avo, "DO_ARTIGO")} ${flexionar(avo, "AVO")} ${avo.nome.toUpperCase()}`,
+      narrative: `Você herdou o diário ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome}. Enquanto ajuda diferentes pessoas na cidade, começa a perceber que as vidas delas estão interligadas por um evento misterioso do passado... e ${flexionar(avo, "o")} seu ${flexionar(avo, "avo")} estava no centro de tudo.`,
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
       sceneText: "Hoje pela manhã, duas pessoas pediram sua ajuda. Cada uma carrega um pedaço do passado.",
       choices: [
@@ -166,7 +166,7 @@ function getStory() {
     endereco: {
       narrative: "O endereço na carta leva a um terreno vazio onde antes ficava a Fábrica Aurora. As pessoas mais velhas ainda baixam a voz ao falar do lugar.",
       image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
-      sceneText: `Uma placa enferrujada ainda resiste: \"Projeto Aurora - Pesquisa & Desenvolvimento\". No diário d${flexionar(avo, "do")} seu ${flexionar(avo, "avo")} ${avo.nome}, a mesma palavra aparece sublinhada dezenas de vezes.`,
+      sceneText: `Uma placa enferrujada ainda resiste: \"Projeto Aurora - Pesquisa & Desenvolvimento\". No diário ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome}, a mesma palavra aparece sublinhada dezenas de vezes.`,
       choices: [
         { text: "Abrir o diário na página marcada", next: "diario" },
         { text: "Procurar testemunhas da época", next: "testemunhas" }
@@ -231,18 +231,18 @@ function getStory() {
     },
 
     diario: {
-      narrative: `Você abre o diário na página marcada com uma fita vermelha. A letra d${flexionar(avo, "do")} seu ${flexionar(avo, "avo")} ${avo.nome} está trêmula, mas determinada.`,
+      narrative: `Você abre o diário na página marcada com uma fita vermelha. A letra ${flexionar(avo, "do_artigo")} seu ${flexionar(avo, "avo")} ${avo.nome} está trêmula, mas determinada.`,
       image: "https://images.unsplash.com/photo-1456513080880-7d93aaa2ba29?w=800&q=80",
       sceneText: "\"Se você está lendo isto, significa que ajudou pessoas cujas vidas eu toquei em 1987. A Fábrica Aurora não fabricava tecidos. Criávamos o protótipo de uma inteligência que aprendia com o comportamento humano. Eu vi o perigo. Por isso queimei o laboratório. Mas guardei o essencial: a ideia de que a tecnologia só deve existir se servir às pessoas... nunca o contrário. Agora o segredo é seu.\"",
       choices: [
-        { text: `Aceitar o legado d${flexionar(avo, "do")} ${flexionar(avo, "avo")} ${avo.nome}`, next: "final" }
+        { text: `Aceitar o legado ${flexionar(avo, "do_artigo")} ${flexionar(avo, "avo")} ${avo.nome}`, next: "final" }
       ]
     },
 
     final: {
       narrative: "O diário se fecha. Pela primeira vez, todas as peças se encaixam.",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
-      sceneText: `As pessoas que você ajudou não eram coincências. Seu ${flexionar(avo, "avo")} ${avo.nome} preparou o caminho décadas atrás. O verdadeiro segredo não era a máquina... era a prova de que você escolheria o lado humano. O legado agora é seu.`,
+      sceneText: `As pessoas que você ajudou não eram coincidências. Seu ${flexionar(avo, "avo")} ${avo.nome} preparou o caminho décadas atrás. O verdadeiro segredo não era a máquina... era a prova de que você escolheria o lado humano. O legado agora é seu.`,
       choices: []
     }
   };
@@ -296,7 +296,7 @@ function renderScene(sceneKey) {
     const avoRotulo = flexionar(personagens.avo, "avo");
     const finalBox = document.createElement("div");
     finalBox.className = "final-reveal";
-    finalBox.innerHTML = `<strong>Fim da aventura.</strong><br>O segredo d${flexionar(personagens.avo, "do")} ${avoRotulo} ${personagens.avo.nome} foi revelado.`;
+    finalBox.innerHTML = `<strong>Fim da aventura.</strong><br>O segredo ${flexionar(personagens.avo, "do_artigo")} ${avoRotulo} ${personagens.avo.nome} foi revelado.`;
     choicesEl.appendChild(finalBox);
   }
 }

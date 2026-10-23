@@ -1,84 +1,39 @@
-// Banco de nomes com identificação de gênero ("M" para masculino, "F" para feminino)
+// Banco de nomes embaralhado com identificação de gênero ("M" para masculino, "F" para feminino)
 const bancoDeNomes = [
-  { nome: "Aarao", genero: "M" }, { nome: "Abel", genero: "M" }, { nome: "Abigail", genero: "F" },
-  { nome: "Acacio", genero: "M" }, { nome: "Ada", genero: "F" }, { nome: "Adalberto", genero: "M" },
-  { nome: "Adao", genero: "M" }, { nome: "Adela", genero: "F" }, { nome: "Adelaide", genero: "F" },
-  { nome: "Adelio", genero: "M" }, { nome: "Adhemar", genero: "M" }, { nome: "Adonis", genero: "M" },
-  { nome: "Adriana", genero: "F" }, { nome: "Adriano", genero: "M" }, { nome: "Agata", genero: "F" },
-  { nome: "Agnes", genero: "F" }, { nome: "Agostinho", genero: "M" }, { nome: "Aida", genero: "F" },
-  { nome: "Ailton", genero: "M" }, { nome: "Airton", genero: "M" }, { nome: "Akira", genero: "M" },
-  { nome: "Alan", genero: "M" }, { nome: "Alana", genero: "F" }, { nome: "Alba", genero: "F" },
-  { nome: "Albert", genero: "M" }, { nome: "Alberta", genero: "F" }, { nome: "Alberto", genero: "M" },
-  { nome: "Albino", genero: "M" }, { nome: "Alcides", genero: "M" }, { nome: "Aldo", genero: "M" },
-  { nome: "Alef", genero: "M" }, { nome: "Alejandro", genero: "M" }, { nome: "Aleksander", genero: "M" },
-  { nome: "Alessandra", genero: "F" }, { nome: "Alessandro", genero: "M" }, { nome: "Alex", genero: "M" },
-  { nome: "Alexander", genero: "M" }, { nome: "Alexandra", genero: "F" }, { nome: "Alexandre", genero: "M" },
-  { nome: "Alexia", genero: "F" }, { nome: "Alexis", genero: "M" }, { nome: "Alfredo", genero: "M" },
-  { nome: "Alice", genero: "F" }, { nome: "Alicia", genero: "F" }, { nome: "Aline", genero: "F" },
-  { nome: "Alison", genero: "M" }, { nome: "Alvaro", genero: "M" }, { nome: "Amanda", genero: "F" },
-  { nome: "Amalia", genero: "F" }, { nome: "Amaro", genero: "M" }, { nome: "Amauri", genero: "M" },
-  { nome: "Amelia", genero: "F" }, { nome: "Americo", genero: "M" }, { nome: "Amilcar", genero: "M" },
-  { nome: "Ana", genero: "F" }, { nome: "Anabel", genero: "F" }, { nome: "Anabela", genero: "F" },
-  { nome: "Anais", genero: "F" }, { nome: "Anastacia", genero: "F" }, { nome: "Anelise", genero: "F" },
-  { nome: "Angel", genero: "M" }, { nome: "Angela", genero: "F" }, { nome: "Angelica", genero: "F" },
-  { nome: "Angelina", genero: "F" }, { nome: "Angelo", genero: "M" }, { nome: "Anibal", genero: "M" },
-  { nome: "Anise", genero: "F" }, { nome: "Anita", genero: "F" }, { nome: "Anisio", genero: "M" },
-  { nome: "Anna", genero: "F" }, { nome: "Antonella", genero: "F" }, { nome: "Antonia", genero: "F" },
-  { nome: "Antonio", genero: "M" }, { nome: "Antony", genero: "M" }, { nome: "Apollo", genero: "M" },
-  { name: "Apolo", genero: "M" }, { name: "Aparecida", genero: "F" }, { name: "Aparecido", genero: "M" },
-  { name: "Aquiles", genero: "M" }, { name: "Arnaldo", genero: "M" }, { name: "Arthur", genero: "M" },
-  { name: "Artur", genero: "M" }, { name: "Ariel", genero: "M" }, { name: "Ariela", genero: "F" },
-  { name: "Ariane", genero: "F" }, { name: "Arlene", genero: "F" }, { name: "Armando", genero: "M" },
-  { name: "Arnalda", genero: "F" }, { name: "Aron", genero: "M" }, { name: "Astrid", genero: "F" },
-  { name: "Athena", genero: "F" }, { name: "Atena", genero: "F" }, { name: "Augusta", genero: "F" },
-  { name: "Augusto", genero: "M" }, { name: "Aurea", genero: "F" }, { name: "Aurelio", genero: "M" },
-  { name: "Aurora", genero: "F" }, { name: "Ayla", genero: "F" }, { name: "Aziz", genero: "M" },
-  { name: "Bárbara", genero: "F" }, { name: "Baltazar", genero: "M" }, { name: "Barnabe", genero: "M" },
-  { name: "Bartolomeu", genero: "M" }, { name: "Beatriz", genero: "F" }, { name: "Belinda", genero: "F" },
-  { name: "Belisa", genero: "F" }, { name: "Bella", genero: "F" }, { name: "Benicio", genero: "M" },
-  { name: "Benito", genero: "M" }, { name: "Benjamin", genero: "M" }, { name: "Bento", genero: "M" },
-  { name: "Berenice", genero: "F" }, { name: "Bernadete", genero: "F" }, { name: "Bernardo", genero: "M" },
-  { name: "Berta", genero: "F" }, { name: "Beto", genero: "M" }, { name: "Betina", genero: "F" },
-  { name: "Bianca", genero: "F" }, { name: "Bibiana", genero: "F" }, { name: "Blanca", genero: "F" },
-  { name: "Boaventura", genero: "M" }, { name: "Boris", genero: "M" }, { name: "Branca", genero: "F" },
-  { name: "Brenda", genero: "F" }, { name: "Brendon", genero: "M" }, { name: "Breno", genero: "M" },
-  { name: "Brian", genero: "M" }, { name: "Briana", genero: "F" }, { name: "Bridget", genero: "F" },
-  { name: "Bruna", genero: "F" }, { name: "Brunilda", genero: "F" }, { name: "Bruno", genero: "M" },
-  { name: "Bryan", genero: "M" }, { name: "Caio", genero: "M" }, { name: "Caleb", genero: "M" },
-  { name: "Camila", genero: "F" }, { name: "Camilo", genero: "M" }, { name: "Carina", genero: "F" },
-  { name: "Carla", genero: "F" }, { name: "Carlos", genero: "M" }, { name: "Catarina", genero: "F" },
-  { name: "Cauã", genero: "M" }, { name: "Cecilia", genero: "F" }, { name: "Celeste", genero: "F" },
-  { name: "Celia", genero: "F" }, { name: "Celso", genero: "M" }, { name: "Cesar", genero: "M" },
-  { name: "Clara", genero: "F" }, { name: "Clarice", genero: "F" }, { name: "Claudio", genero: "M" },
-  { name: "Cleber", genero: "M" }, { name: "Daniel", genero: "M" }, { name: "Daniela", genero: "F" },
-  { name: "Danilo", genero: "M" }, { name: "Dante", genero: "M" }, { name: "Davi", genero: "M" },
-  { name: "Debora", genero: "F" }, { name: "Denise", genero: "F" }, { name: "Diana", genero: "F" },
-  { name: "Diego", genero: "M" }, { name: "Diogo", genero: "M" }, { name: "Douglas", genero: "M" },
-  { name: "Eduarda", genero: "F" }, { name: "Eduardo", genero: "M" }, { name: "Elisa", genero: "F" },
-  { name: "Emanuel", genero: "M" }, { name: "Emilia", genero: "F" }, { name: "Enzo", genero: "M" },
-  { name: "Ester", genero: "F" }, { name: "Evandro", genero: "M" }, { name: "Fabiana", genero: "F" },
-  { name: "Fabio", genero: "M" }, { name: "Fabricio", genero: "M" }, { name: "Felipe", genero: "M" },
-  { name: "Fernanda", genero: "F" }, { name: "Fernando", genero: "M" }, { name: "Flavia", genero: "F" },
-  { name: "Flavio", genero: "M" }, { name: "Gabriel", genero: "M" }, { name: "Gabriela", genero: "F" },
-  { name: "Gael", genero: "M" }, { name: "Giovana", genero: "F" }, { name: "Guilherme", genero: "M" },
-  { name: "Gustavo", genero: "M" }, { name: "Heitor", genero: "M" }, { name: "Helena", genero: "F" },
-  { name: "Henrique", genero: "M" }, { name: "Igor", genero: "M" }, { name: "Isabel", genero: "F" },
-  { name: "Isabela", genero: "F" }, { name: "Isadora", genero: "F" }, { name: "Ícaro", genero: "M" },
-  { name: "João", genero: "M" }, { name: "Julia", genero: "F" }, { name: "Juliana", genero: "F" },
-  { name: "Julio", genero: "M" }, { name: "Lara", genero: "F" }, { name: "Larissa", genero: "F" },
-  { name: "Laura", genero: "F" }, { name: "Leo", genero: "M" }, { name: "Leonardo", genero: "M" },
-  { name: "Leticia", genero: "F" }, { name: "Lucas", genero: "M" }, { name: "Luciana", genero: "F" },
-  { name: "Luiz", genero: "M" }, { name: "Luiza", genero: "F" }, { name: "Manuela", genero: "F" },
-  { name: "Marcelo", genero: "M" }, { name: "Marco", genero: "M" }, { name: "Maria", genero: "F" },
-  { name: "Mariana", genero: "F" }, { name: "Mateus", genero: "M" }, { name: "Miguel", genero: "M" },
-  { name: "Natalia", genero: "F" }, { name: "Nicolas", genero: "M" }, { name: "Nicole", genero: "F" },
-  { name: "Otavio", genero: "M" }, { name: "Patricia", genero: "F" }, { name: "Paulo", genero: "M" },
-  { name: "Pedro", genero: "M" }, { name: "Rafael", genero: "M" }, { name: "Rafaela", genero: "F" },
-  { name: "Raquel", genero: "F" }, { name: "Renan", genero: "M" }, { name: "Renata", genero: "F" },
-  { name: "Rodrigo", genero: "M" }, { name: "Samuel", genero: "M" }, { name: "Sofia", genero: "F" },
-  { name: "Thiago", genero: "M" }, { name: "Tomas", genero: "M" }, { name: "Valentina", genero: "F" },
-  { name: "Vanessa", genero: "F" }, { name: "Victor", genero: "M" }, { name: "Vinicius", genero: "M" },
-  { name: "Vitor", genero: "M" }, { name: "Vitoria", genero: "F" }, { name: "Yasmin", genero: "F" }
+  { nome: "Catarina", genero: "F" }, { nome: "Gael", genero: "M" }, { nome: "Henrique", genero: "M" },
+  { nome: "Valentina", genero: "F" }, { nome: "Lara", genero: "F" }, { nome: "Acacio", genero: "M" },
+  { nome: "Diego", genero: "M" }, { nome: "Beatriz", genero: "F" }, { nome: "Davi", genero: "M" },
+  { nome: "Anabela", genero: "F" }, { nome: "Igor", genero: "M" }, { nome: "Juliana", genero: "F" },
+  { nome: "Arthur", genero: "M" }, { nome: "Renata", genero: "F" }, { nome: "Beno", genero: "M" },
+  { nome: "Isabela", genero: "F" }, { nome: "Otavio", genero: "M" }, { nome: "Camila", genero: "F" },
+  { nome: "Adriano", genero: "M" }, { nome: "Adelaide", genero: "F" }, { nome: "Cauã", genero: "M" },
+  { nome: "Ester", genero: "F" }, { nome: "Felipe", genero: "M" }, { nome: "Cecilia", genero: "F" },
+  { nome: "Lucas", genero: "M" }, { nome: "Bianca", genero: "F" }, { nome: "Thiago", genero: "M" },
+  { nome: "Laura", genero: "F" }, { nome: "Leonardo", genero: "M" }, { nome: "Diana", genero: "F" },
+  { nome: "Enzo", genero: "M" }, { nome: "Sofia", genero: "F" }, { nome: "Ailton", genero: "M" },
+  { nome: "Helena", genero: "F" }, { nome: "Gustavo", genero: "M" }, { nome: "Mariana", genero: "F" },
+  { nome: "Rafael", genero: "M" }, { nome: "Leticia", genero: "F" }, { nome: "Gabriel", genero: "M" },
+  { nome: "Bruna", genero: "F" }, { nome: "Rodrigo", genero: "M" }, { nome: "Vanessa", genero: "F" },
+  { nome: "Caio", genero: "M" }, { nome: "Alice", genero: "F" }, { nome: "Heitor", genero: "M" },
+  { nome: "Luiza", genero: "F" }, { nome: "Matheus", genero: "M" }, { nome: "Isadora", genero: "F" },
+  { nome: "Bernardo", genero: "M" }, { nome: "Clarice", genero: "F" }, { nome: "Daniel", genero: "M" },
+  { nome: "Agata", genero: "F" }, { nome: "Adao", genero: "M" }, { nome: "Amanda", genero: "F" },
+  { nome: "Alexandre", genero: "M" }, { nome: "Nicole", genero: "F" }, { nome: "Samuel", genero: "M" },
+  { nome: "Debora", genero: "F" }, { nome: "Emanuel", genero: "M" }, { nome: "Aline", genero: "F" },
+  { nome: "Vitor", genero: "M" }, { nome: "Patricia", genero: "F" }, { nome: "Vinicius", genero: "M" },
+  { nome: "Raquel", genero: "F" }, { nome: "Ariel", genero: "M" }, { nome: "Gabriela", genero: "F" },
+  { nome: "Danilo", genero: "M" }, { nome: "Giovana", genero: "F" }, { nome: "Guilherme", genero: "M" },
+  { nome: "Larissa", genero: "F" }, { nome: "Pedro", genero: "M" }, { nome: "Carolina", genero: "F" },
+  { nome: "Bruno", genero: "M" }, { nome: "Fernanda", genero: "F" }, { nome: "Fabio", genero: "M" },
+  { nome: "Natalia", genero: "F" }, { nome: "Dante", genero: "M" }, { nome: "Manuela", genero: "F" },
+  { nome: "Paulo", genero: "M" }, { nome: "Soraia", genero: "F" }, { nome: "Marcelo", genero: "M" },
+  { nome: "Yasmin", genero: "F" }, { nome: "Renan", genero: "M" }, { nome: "Eduarda", genero: "F" },
+  { nome: "Cesar", genero: "M" }, { nome: "Agnes", genero: "F" }, { nome: "Breno", genero: "M" },
+  { nome: "Ayla", genero: "F" }, { nome: "Carlos", genero: "M" }, { nome: "Juliet", genero: "F" },
+  { nome: "Elias", genero: "M" }, { nome: "Rafaela", genero: "F" }, { nome: "Marcos", genero: "M" },
+  { nome: "Denise", genero: "F" }, { nome: "Ezequiel", genero: "M" }, { nome: "Elisa", genero: "F" },
+  { nome: "Fernando", genero: "M" }, { name: "Vitoria", genero: "F" }, { nome: "Flavio", genero: "M" },
+  { nome: "Maria", genero: "F" }, { nome: "João", genero: "M" }, { nome: "Ana", genero: "F" }
 ];
 
 let personagens = {
@@ -87,17 +42,22 @@ let personagens = {
   mecanico: { nome: "", genero: "M" }
 };
 
-function sortearNomes() {
-  const disponiveis = [...bancoDeNomes];
-
-  function pegarAleatorio() {
-    const indice = Math.floor(Math.random() * disponiveis.length);
-    return disponiveis.splice(indice, 1)[0];
+// Função para embaralhar uma lista (Fisher-Yates Shuffle)
+function embaralhar(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
+  return array;
+}
 
-  personagens.avo = pegarAleatorio();
-  personagens.padaria = pegarAleatorio();
-  personagens.mecanico = pegarAleatorio();
+// Sorteio totalmente aleatório sem repetição entre os personagens da mesma rodada
+function sortearNomes() {
+  const disponiveis = embaralhar([...bancoDeNomes]);
+
+  personagens.avo = disponiveis.pop();
+  personagens.padaria = disponiveis.pop();
+  personagens.mecanico = disponiveis.pop();
 }
 
 function flexionar(personagem, tipo) {
